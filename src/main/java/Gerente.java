@@ -1,32 +1,11 @@
-public class Gerente {
-    private String nombre;
-    private String documento;
-    private double salario;
+import java.util.Objects;
 
-    public String getNombre() {
-        return nombre;
+public class Gerente extends Funcionario {
+    private String clave;
+    public void setClave (String clave) {
+        this.clave = clave;
     }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getDocumento() {
-        return documento;
-    }
-
-    public void setDocumento(String documento) {
-        this.documento = documento;
-    }
-
-    public double getSalario() {
-        return salario;
-    }
-
-    public void setSalario(double salario) {
-        this.salario = salario;
-    }
-    public double getBonificacion () {
-        return this.salario * 2;
+    public boolean iniciarSesion (String clave) {
+        return this.clave == clave;
     }
 }
