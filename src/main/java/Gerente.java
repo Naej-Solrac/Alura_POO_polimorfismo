@@ -8,4 +8,8 @@ public class Gerente extends Funcionario {
     public boolean iniciarSesion (String clave) {
         return this.clave == clave;
     }
+    public double getBonificacion() {
+        //return this.Salario();
+        return super.getSalario();
+    }
 }

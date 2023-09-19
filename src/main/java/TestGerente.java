@@ -13,7 +13,7 @@ public class TestGerente {
         Gerente gerente = new Gerente();
         gerente.setSalario(6000);
         gerente.setClave("Alura");
-        gerente.setSalario(1);
         System.out.println(gerente.iniciarSesion("Alura"));
+        System.out.println(gerente.getBonificacion());
     }
 }
