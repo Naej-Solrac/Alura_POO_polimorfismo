@@ -2,6 +2,21 @@ public class ControlBonificacion {
     private double suma;
 
     public double registrarSalario(Funcionario funcionario) {
-        return this.suma = funcionario.getBonificacion() + this.suma;
+        this.suma = funcionario.getBonificacion() + this.suma;
+        System.out.println("Calculo total Funcionario: " + this.suma);
+        return this.suma;
     }
+
+    public double registrarSalario(Gerente gerente) {
+        this.suma = gerente.getBonificacion() + this.suma;
+        System.out.println("Calculo total Gerente: " + this.suma);
+        return this.suma;
+    }
+
+    public double registrarSalario(Contador contador) {
+        this.suma = contador.getBonificacion() + this.suma;
+        System.out.println("Calculo total Gerente: " + this.suma);
+        return this.suma;
+    }
+
 }
